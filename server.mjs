@@ -1,3 +1,7 @@
+const PORT = process.env.PORT || 3000;
+// Change from localhost to binding to all interfaces
+app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
+
 import express from 'express';
 import cors from 'cors';
 import { GoogleGenAI } from '@google/genai';
